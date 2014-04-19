@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- activity import_data -->
+
+    <string name="title_activity_import_data">Importuj dane</string>
+    
+    <string name="import_data">Importuj</string>
+    <string name="import_data_info">Istnieje możliwość wczytania profilu, który już został utworzony.</string>
+    <string name="import_from_file">Z pliku</string>
+    <string name="import_from_network">Z sieci</string>
+    
+    <string name="import_choose_file">Wybierz plik</string>
+    <string name="import_chosen_file">Wybrany plik: </string>
+    
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  
+    <!-- activity_main -->
+    
+    <string name="login_button">Logowanie</string>
+    <string name="create_profile_button">Stwórz profil</string>
+    <string name="import_button">Importuj dane</string>
+    <string name="exit_button">Wyjście</string>    
+    
+    
+</resources>

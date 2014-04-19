@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="title_activity_register">Rejestracja</string>
+    <string name="required_fields">Pola wymagane</string>
+    <string name="optional_fields">Pola opcjonalne</string>
+    <string name="email">Adres e-mail</string>
+    <string name="email_hint">Podanie adresu e-mail nie jest obowiązkowe, jednak w przypadku utraty hasła jest to jedyny sposób, aby je odzyskać. </string>
+    <string name="register">Rejestruj</string>
+    
+    <string name="username_exists">Nazwa użytkownika jest już zajęta.</string>
+    <string name="email_exists">Adres e-mail jest już zajęty.</string>
+    <string name="invalid_email">Adres e-mail jest niepoprawny.</string>
+    <string name="invalid_password">Hasło jest błędne.</string>
+    
+    <string name="empty_username">Nazwa użytkownika nie może być pusta.</string>
+    
+    <string name="error_create_profile">Podczas tworzenia nowego profilu wystąpił błąd.</string>
+    <string name="info_create_profile_ok">Pomyślnie założono nowe konto.</string>
+    <string name="ok">OK</string>
+    <string name="error">Błąd</string>
+    <string name="info">Informacja</string>
+    
+</resources>
