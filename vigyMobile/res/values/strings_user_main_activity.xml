@@ -4,7 +4,7 @@
     <string name="title_activity_user_main">Menu użytkownika</string>
     <string name="training">Trening</string>
     <string name="diet">Dieta</string>
-    <string name="profile">Profil</string>
+    <string name="profile">Zarządzanie profilem</string>
     <string name="synchro">Synchronizacja / Eksport</string>
     <string name="settings">Ustawienia</string>
     <string name="logout">Wyloguj</string>

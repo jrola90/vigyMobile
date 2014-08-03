@@ -15,7 +15,7 @@
     
     <string name="empty_username">Nazwa użytkownika nie może być pusta.</string>
     
-    <string name="error_create_profile">Podczas tworzenia nowego profilu wystąpił błąd.</string>
+    <string name="error_create_profile">Podczas tworzenia nowego profilu wystąpił błąd</string>
     <string name="info_create_profile_ok">Pomyślnie założono nowe konto.</string>
     <string name="ok">OK</string>
     <string name="error">Błąd</string>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="title_activity_training">Trening</string>
+	<string name="add_training_item">Dodaj jednostkę treningową</string>
+    
+    <string-array name="exercises">
+        <item>Wyciskanie sztangi leżąć na ławce prostej;</item>
+        <item>Wyciskanie hantelek na skosie;Ćwiczący leży na ławce skośnej, skos od 15 &#8211; 30 stopni</item>
+        <item>Martwy ciąg;Podstawowe ćwiczenie budujące plecy</item>
+    </string-array>
+
+</resources>

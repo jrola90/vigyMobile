@@ -2,7 +2,7 @@ package pl.jrola.java.android.vigym.vigymobile.test.db.to;
 
 import java.util.Map;
 
-import pl.jrola.java.android.vigym.vigymobile.db.to.AbstractTransferObject;
+import pl.jrola.java.android.vigym.vigymobile.db.to.TransferObject;
 import android.test.ActivityTestCase;
 import android.test.suitebuilder.annotation.SmallTest;
 
@@ -37,7 +37,7 @@ public class AbstractTransferObjectTest extends ActivityTestCase {
 
 }
 
-class TestClass extends AbstractTransferObject {
+class TestClass extends TransferObject {
 
 	private String emptyProperty;
 	private String propertyString = "property_String_value";

@@ -15,18 +15,21 @@
             android:id="@+id/user_main_training_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="onTrainingButtonClick"
             android:text="@string/training" />
 
         <Button
             android:id="@+id/user_main_diet_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:visibility="gone"
             android:text="@string/diet" />
 
         <Button
             android:id="@+id/user_main_profile_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="onProfileManagementButtonClick"
             android:text="@string/profile" />
 
         <Button
@@ -39,18 +42,21 @@
             android:id="@+id/user_main_settings_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:visibility="gone"
             android:text="@string/settings" />
 
         <Button
             android:id="@+id/user_main_logout_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="logoutButtonOnClick"
             android:text="@string/logout" />
 
         <Button
             android:id="@+id/user_main_exit_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="exitButtonOnClick"
             android:text="@string/exit" />
     </LinearLayout>
 

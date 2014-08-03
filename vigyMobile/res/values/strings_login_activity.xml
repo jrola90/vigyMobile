@@ -12,6 +12,7 @@
     <string name="login_progress_signing_in">Logowanie trwa . . .</string>
     <string name="error_invalid_password">Hasło jest za krótkie</string>
     <string name="error_incorrect_password">Hasło lub login jest nieprawidłowy</string>
+    <string name="error_login">Podczas logowania wystąpił błąd</string>
     <string name="error_field_required">To pole jest wymagane</string>
     <string name="error_invalid_email">Podany login jest inwalidą</string>
     

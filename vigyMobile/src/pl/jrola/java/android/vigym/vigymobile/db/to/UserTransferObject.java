@@ -1,13 +1,14 @@
 package pl.jrola.java.android.vigym.vigymobile.db.to;
 
-import pl.jrola.java.android.vigym.vigymobile.utils.DBUtils;
+import pl.jrola.java.android.vigym.vigymobile.utils.Utils;
+import pl.jrola.java.android.vigym.vigymobile.utils.db.DbUtils;
 import android.database.Cursor;
 
 /**
  * Transfer object for user.
- *
+ * 
  */
-public class UserTransferObject extends AbstractTransferObject {
+public class UserTransferObject extends TransferObject {
 
 	private Long user_id;
 	private String user_mail;
@@ -30,17 +31,17 @@ public class UserTransferObject extends AbstractTransferObject {
 	public UserTransferObject(Cursor cursor) {
 		super();
 
-		int columnIndex = cursor.getColumnIndex(DBUtils.DB_USERS_USER_ID);
-		this.user_id = cursor.getLong(columnIndex);
+		int columnIndexUserId = cursor.getColumnIndex(DbUtils.DB_COLUMN_USERS_USER_ID);
+		this.user_id = cursor.getLong(columnIndexUserId);
 
-		columnIndex = cursor.getColumnIndex(DBUtils.DB_USERS_USER_MAIL);
-		this.user_mail = cursor.getString(columnIndex);
+		int columnIndexUserMain = cursor.getColumnIndex(DbUtils.DB_COLUMN_USERS_USER_MAIL);
+		this.user_mail = cursor.getString(columnIndexUserMain);
 
-		columnIndex = cursor.getColumnIndex(DBUtils.DB_USERS_USER_NICKNAME);
-		this.user_nickname = cursor.getString(columnIndex);
+		int columnIndexUserNickname = cursor.getColumnIndex(DbUtils.DB_COLUMN_USERS_USER_NICKNAME);
+		this.user_nickname = cursor.getString(columnIndexUserNickname);
 
-		columnIndex = cursor.getColumnIndex(DBUtils.DB_USERS_USER_PASSWORD);
-		this.user_password = cursor.getString(columnIndex);
+		int columnIndexUserPassword = cursor.getColumnIndex(DbUtils.DB_COLUMN_USERS_USER_PASSWORD);
+		this.user_password = cursor.getString(columnIndexUserPassword);
 	}
 
 	public Long getUser_id() {
@@ -73,6 +74,14 @@ public class UserTransferObject extends AbstractTransferObject {
 
 	public void setUser_nickname(String user_nickname) {
 		this.user_nickname = user_nickname;
+	}
+
+	public boolean verifyPassword(String password) {
+
+		if (this.user_password.equals(Utils.generateSHA1Hash(password)))
+			return true;
+
+		return false;
 	}
 
 }

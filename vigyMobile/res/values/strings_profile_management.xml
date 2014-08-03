@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="title_activity_profile_management">Zarządzanie profilem</string>
+    <string name="title_activity_profile_settings">Konto</string>
+    <string name="title_activity_profile_bio">Personalne</string>
+    
+    <string name="change_password">Zmiana hasła</string>
+    
+    <string name="old_password">Obecne hasło</string>
+    <string name="new_password">Nowe hasło</string>
+    <string name="confirm_new_password">Potwierdź nowe hasło</string>
+    <string name="confirm_changing_password">Potwierdź zmianę hasła</string>
+	<string name="current_password_error">Wprowadzone obecne hasło jest błędne</string>
+    <string name="confirm_password_error">Nowe hasła nie pasują do siebie</string>
+    <string name="change_password_success">Pomyślnie zmieniono hasło</string>
+    <string name="change_password_error">Podczas zmiany hasła wystąpił błąd</string>
+    
+    <string name="add_property">Dodaj własność</string>
+    <string name="add_value">Dodaj wartość</string>
+    <string name="property_name">Nazwa</string>
+    <string name="property_desc">Opis</string>
+    <string name="add">Dodaj</string>
+    <string name="modify">Modyfikuj</string>
+    <string name="delete">Usuń</string>
+    <string name="close">Zamknij</string>
+    
+    <string name="success_add_property">Pomyślnie dodano własność</string>
+    <string name="success_update_property">Pomyślnie uaktualniono własność</string>
+    <string name="success_delete_property">Pomyślnie usunięto własność</string>
+    
+    <string name="success_add_property_value">Pomyślnie dodano wartość</string>
+    <string name="success_delete_profile_value">Pomyślnie usunięto wartość</string>
+    <string name="success_update_profile_value">Pomyślnie zauktualizowano wartość</string>
+    
+    <string name="error_add_property">Błąd dodawania własnoci</string>
+    <string name="error_update_property">Błąd uaktualniania własnoci</string>
+    <string name="error_delete_property">Błąd usuwania własnoci</string>
+    
+    <string name="error_add_property_value">Błąd dodawania wartości</string>
+    <string name="error_update_property_value">Błąd podczas modyfikacji wartości</string>
+    
+    <string name="error_get_unit_list">Błąd pobierania jednostek</string>
+    <string name="error_get_piv_list">Błąd pobierania wartości</string>
+    <string name="error_delete_profile_value">Błąd usuwania wartości</string>
+    
+</resources>

@@ -1,42 +1,47 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:orientation="vertical" >
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
 
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1.24"
-        android:src="@drawable/ic_launcher" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
 
-    <Button
-        android:id="@+id/loginButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/login_button" 
-        android:onClick="loginButtonOnClick"
-        />
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.24"
+            android:src="@drawable/ic_launcher" />
 
-    <Button
-        android:id="@+id/createProfileButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/create_profile_button"
-        android:onClick="createProfileButtonOnClick" />
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="loginButtonOnClick"
+            android:text="@string/login_button" />
 
-    <Button
-        android:id="@+id/importButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/import_button"
-        android:onClick="importButtonOnClick" />
+        <Button
+            android:id="@+id/createProfileButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="createProfileButtonOnClick"
+            android:text="@string/create_profile_button" />
 
-    <Button
-        android:id="@+id/exitButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/exit_button"
-        android:onClick="exitButtonOnClick" />
+        <Button
+            android:id="@+id/importButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="importButtonOnClick"
+            android:visibility="gone"
+            android:text="@string/import_button" />
 
-</LinearLayout>
+        <Button
+            android:id="@+id/exitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="exitButtonOnClick"
+            android:text="@string/exit_button" />
+    </LinearLayout>
+
+</ScrollView>

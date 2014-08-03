@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- Footer aligned to bottom -->
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#000"
+        android:gravity="center" >
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="onAddTrainingItemClick"
+            android:src="@drawable/ic_add" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageButton1"
+            android:onClick="onUpdateTrainingItemClick"
+            android:src="@drawable/ic_edit" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:onClick="onDeleteTrainingItemClick"
+            android:layout_toRightOf="@+id/imageButton2"
+            android:src="@drawable/ic_delete" />
+    </RelativeLayout>
+
+    <!-- Scrollable Item below header and above footer -->
+
+    <ListView
+        android:id="@+id/exerciseList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/footer" >
+
+    </ListView>
+
+</RelativeLayout>
