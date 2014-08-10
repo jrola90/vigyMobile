@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="exercises">
+        <!-- barki -->
+        <item>Wyciskanie sztangi sprzed głowy;Ćwiczenie to można wykonywać zarówno w pozycji stojącej (tzw. żołnierskie wyciskanie), jak i siedzącej.</item>
+        <item>Wyciskanie sztangielek;Dłonie ze sztangielkami przez cały czas trzymamy tak, aby ich wewnętrzne części skierowane były do przodu.</item>
+        <item>Unoszenie sztangielek bokiem w górę;Ruch unoszenia rozpoczynamy przy ugiętych rękach, łokcie w każdej fazie ruchu wyprzedzają dłonie.</item>
+        <item>Podciąganie sztangi wzdłuż tułowia;Rozkrok nieco szerszy od rozstawu barków, uchwyt na szerokość ramion.</item>
+        <item>Unoszenie ramion w przód ze sztangą;Ćwiczenie wykonujemy w staniu - rozkrok nieco szerzej od barków, uchwyt na szerokość barków-ułożenie dłoni zależy od rodzaju sztangi, z jaką wykonujemy ćwiczenie.</item>
+        <!-- klatka -->
+        <item>Wyciskanie sztangi w leżeniu na ławce poziomej; Kładziemy się na ławce tak, by nogi ugięte były pod kątem prostym i przylegały do podłoża.</item>
+        <item>Wyciskanie sztangielek w leżeniu na ławce poziomej; Kładziemy się na ławce tak, by nogi ugięte były pod kątem prostym i przylegały do podłoża.</item>
+        <item>Rozpiętki ze sztangielkami w leżeniu na ławce poziomej; Ćwiczenie rozpoczynamy z ramionami wyprostowanymi - prostopadłymi do podłoża (palce dłoni skierowane są do siebie), a w trakcie ruchu lekko uginamy je w łokciach.</item>
+        <!-- ramiona -->
+        <item>Uginanie ramion ze sztangą stojąc podchwytem; Stajemy w rozkroku (na szerokość barków lub nieco szerzej) - sztangę chwytamy w zależności od tego, którą głowę bicepsu chcemy zaangażować bardziej.</item>
+        <item>Uginanie ramion ze sztangielkami stojąc podchwytem(z „supinacją” nadgarstka); Ćwiczenie to można wykonywać zarówno w pozycji stojącej, jak i siedzącej. Bardzo dobre, jako rozgrzewkowe przed ciężkimi seriami ze sztangą, ale również jako samodzielne ćwiczenie rozwijające masę i kształt bicepsów.</item>
+        <!-- plecy -->
+        <item>Podciąganie na drążku szerokim uchwytem (nachwyt); Nie ma drugiego takiego ćwiczenia pod względem wszechstronności rozwoju mięśni grzbietu. Ćwiczenie to można wykonywać do karku i do brody, lecz wersja do karku jest mniej naturalna dla stawów.</item>
+        <item>Podciąganie sztangi w opadzie (wiosłowanie); Stajemy nad sztangą w rozkroku na szerokość barków, pochylamy tułów do pozycji prawie równoległej do podłoża, plecy w dolnym odcinku mocno ugięte do środka, nogi lekko ugięte w kolanach przez cały czas trwania ćwiczenia.</item>
+        <item>Podciąganie sztangielki w opadzie(wiosłowanie); Typowo izolowane ćwiczenie na rozbudowę mięśni najszerszych.</item>
+    </string-array>
+
+</resources>

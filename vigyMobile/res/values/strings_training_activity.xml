@@ -8,12 +8,6 @@
 	<string name="training_value">Wartość</string>
 	<string name="training_date">Data treningu</string>
 	
-    <string-array name="exercises">
-        <item>Wyciskanie sztangi leżąć na ławce prostej;</item>
-        <item>Wyciskanie hantelek na skosie;Ćwiczący leży na ławce skośnej, skos od 15 &#8211; 30 stopni</item>
-        <item>Martwy ciąg;Podstawowe ćwiczenie budujące plecy</item>
-    </string-array>
-    
     <string name="error_get_exercise_list">Podczas pobierania listy ćwiczeń wystapił błąd</string>
 	<string name="error_get_trainings_list">Podczas pobierania listy treningów wystąpił błąd</string>
     <string name="error_add_training">Błąd dodawania treningu</string>
