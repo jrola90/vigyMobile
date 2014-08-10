@@ -44,6 +44,8 @@ public class LoginActivity extends VigymActivity implements VigymForm {
 		usernameEditText = (EditText) findViewById(R.id.username);
 		passwordEditText = (EditText) findViewById(R.id.password);
 
+		this.loadingSpinner.setMessage(getString(R.string.login_progress_signing_in));
+		
 		validator = new ValidatorList(getContext());
 		validator.addValidator(new LoginValidator(usernameEditText));
 	}

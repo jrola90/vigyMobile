@@ -21,4 +21,6 @@
     <string name="error">Błąd</string>
     <string name="info">Informacja</string>
     
+    <string name="register_in_progress">Trwa rejestracja...</string>
+    
 </resources>

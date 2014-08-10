@@ -216,5 +216,4 @@ public abstract class TrainingDialog extends VigymDialog implements VigymForm {
 				this.trainingDateEditText);
 		newFragment.show(parentActivity.getFragmentManager(), "datePicker");
 	}
-
 }

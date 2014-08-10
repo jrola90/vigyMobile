@@ -40,6 +40,8 @@ public class RegisterActivity extends VigymActivity implements VigymForm {
 		this.passwordEditText = (EditText) findViewById(R.id.passwordTextView);
 		this.mailEditText = (EditText) findViewById(R.id.mailTextView);
 		
+		this.loadingSpinner.setMessage(getString(R.string.register_in_progress));
+		
 		this.validator = new ValidatorList(getContext());
 		this.validator.addValidator(new UsernameValidator(usernameEditText, this.databaseHelper));
 		this.validator.addValidator(new PasswordValiadtor(passwordEditText));

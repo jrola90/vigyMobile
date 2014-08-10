@@ -32,7 +32,7 @@ public class LoadingSpinner {
 				R.layout.activity_progress_spinner, null);
 		this.builder.setView(builderView);
 
-		TextView messageTextView = (TextView) builderView.findViewById(R.id.login_status_message);
+		messageTextView = (TextView) builderView.findViewById(R.id.login_status_message);
 		messageTextView.setText(message);
 		
 		this.dialog = builder.create();

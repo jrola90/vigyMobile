@@ -15,49 +15,62 @@
             android:id="@+id/user_main_training_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:drawablePadding="1sp"
+            android:drawableTop="@drawable/ic_training"
             android:onClick="onTrainingButtonClick"
+            android:paddingBottom="20sp"
             android:text="@string/training" />
-
-        <Button
-            android:id="@+id/user_main_diet_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:visibility="gone"
-            android:text="@string/diet" />
 
         <Button
             android:id="@+id/user_main_profile_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:drawablePadding="1sp"
+            android:drawableTop="@drawable/ic_mgmt"
             android:onClick="onProfileManagementButtonClick"
+            android:paddingBottom="20sp"
             android:text="@string/profile" />
 
         <Button
             android:id="@+id/user_main_synchro_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:drawablePadding="1sp"
+            android:drawableTop="@drawable/ic_synchro"
+            android:paddingBottom="20sp"
             android:text="@string/synchro" />
-
-        <Button
-            android:id="@+id/user_main_settings_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:visibility="gone"
-            android:text="@string/settings" />
 
         <Button
             android:id="@+id/user_main_logout_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:drawablePadding="1sp"
+            android:drawableTop="@drawable/ic_logout2"
             android:onClick="logoutButtonOnClick"
+            android:paddingBottom="20sp"
             android:text="@string/logout" />
+
+        <Button
+            android:id="@+id/user_main_diet_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/diet"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/user_main_settings_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/settings"
+            android:visibility="gone" />
 
         <Button
             android:id="@+id/user_main_exit_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="exitButtonOnClick"
-            android:text="@string/exit" />
+            android:text="@string/exit"
+            android:visibility="gone" />
     </LinearLayout>
 
 </ScrollView>
