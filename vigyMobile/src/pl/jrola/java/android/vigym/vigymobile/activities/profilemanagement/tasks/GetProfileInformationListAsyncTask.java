@@ -4,7 +4,7 @@ import java.util.List;
 
 import pl.jrola.java.android.vigym.vigymobile.activities.profilemanagement.ProfileBioFragmentActivity;
 import pl.jrola.java.android.vigym.vigymobile.db.dao.DAOFactory;
-import pl.jrola.java.android.vigym.vigymobile.db.dao.ProfileInformationDAO;
+import pl.jrola.java.android.vigym.vigymobile.db.dao.ProfileInformationsDAO;
 import pl.jrola.java.android.vigym.vigymobile.db.dao.exceptions.ProfileInformationGetListException;
 import pl.jrola.java.android.vigym.vigymobile.db.to.TransferObject;
 import pl.jrola.java.android.vigym.vigymobile.db.to.UserTransferObject;
@@ -29,12 +29,12 @@ public class GetProfileInformationListAsyncTask extends
 	protected String doInBackground(Void... arg0) {
 
 		try {
-			ProfileInformationDAO profileInformationDAO = DAOFactory
-					.createProfileInformationDAO(((ProfileBioFragmentActivity) activity)
+			ProfileInformationsDAO profileInformationDAO = DAOFactory
+					.createProfileInformationsDAO(((ProfileBioFragmentActivity) activity)
 							.getDatabaseHelper());
 
 			this.profileInformationTransferObjectList = profileInformationDAO
-					.getProfileInformationList(userTransferObject.getUser_id());
+					.getProfileInformationList(userTransferObject.getId());
 
 		} catch (ProfileInformationGetListException e) {
 			return e.getMessage();

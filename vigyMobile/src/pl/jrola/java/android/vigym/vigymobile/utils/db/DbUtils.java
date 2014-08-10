@@ -54,6 +54,7 @@ public abstract class DbUtils {
 	public static final String DB_COLUMN_TRAINING_VALUE = "training_value";
 	public static final String DB_COLUMN_TRAINING_DATE = "training_date";
 	public static final String DB_COLUMN_TRAINING_EXERCISE_ID = "training_exercise_id";
+	public static final String DB_COLUMN_TRAINING_USER_ID = "training_user_id";
 
 	public static final String PK = "PRIMARY KEY";
 	public static final String FK = "FOREIGN KEY";
@@ -142,7 +143,6 @@ public abstract class DbUtils {
 	public static String getCreateTableProfileInformationValuesStatement() {
 
 		final DbConstraints constraintFK = DbConstraints.FOREIGN_KEY;
-		// constraintFK.setConstraint(DbConstraints.FOREIGN_KEY);
 		constraintFK.setParentTable(DbUtils.DB_TABLE_PROF_INFO);
 		constraintFK
 				.setColumnChildTable(DbUtils.DB_COLUMN_PROF_INFO_VAL_INFO_ID);
@@ -150,7 +150,6 @@ public abstract class DbUtils {
 		final String fk = constraintFK.toString();
 
 		final DbConstraints constraintFK2 = DbConstraints.PRIMARY_KEY;
-		// constraintFK2.setConstraint(DbConstraints.FOREIGN_KEY);
 		constraintFK2.setParentTable(DbUtils.DB_TABLE_PROF_VALUES);
 		constraintFK2.setColumnChildTable(DbUtils.DB_COLUMN_UNIT_ID);
 		constraintFK2
@@ -270,6 +269,12 @@ public abstract class DbUtils {
 		constraintFK.setColumnParentTable(DbUtils.DB_COLUMN_EXERCISE_ID);
 		final String fk = constraintFK.toString();
 
+		final DbConstraints constraintFK2 = DbConstraints.FOREIGN_KEY;
+		constraintFK2.setParentTable(DbUtils.DB_TABLE_USERS);
+		constraintFK2.setColumnParentTable(DbUtils.DB_COLUMN_USERS_USER_ID);
+		constraintFK2.setColumnChildTable(DbUtils.DB_COLUMN_TRAINING_ID);
+		final String fk2 = constraintFK.toString();
+
 		String stmt = DbUtils.generateCreateStatement(
 				DbUtils.DB_TABLE_TRAININGS,
 				new LinkedHashMap<String, String>() {
@@ -289,7 +294,12 @@ public abstract class DbUtils {
 						put(DbUtils.DB_COLUMN_TRAINING_EXERCISE_ID,
 								DbDataTypes.INTEGER + " "
 										+ DbDataOptions.NOT_NULL);
+						put(DbUtils.DB_COLUMN_TRAINING_USER_ID,
+								DbDataTypes.INTEGER + " "
+										+ DbDataOptions.NOT_NULL);
+
 						put(" ", fk);
+						put("  ", fk2);
 					}
 				});
 

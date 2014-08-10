@@ -9,6 +9,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
+import android.content.DialogInterface.OnMultiChoiceClickListener;
 import android.view.View;
 import android.widget.Button;
 
@@ -42,7 +43,7 @@ public class ProfileInformationAddDialog extends ProfileInformationDialog {
 
 						ProfileInformationTransferObject pito = new ProfileInformationTransferObject(
 								propertyName, propertyDesc, LoggedUserSingleton
-										.getUserTransferObject().getUser_id());
+										.getUserTransferObject().getId());
 
 						((AddProfileInformationAsyncTask) ProfileInformationAddDialog.this.asyncTask)
 								.setProfileInformationTransferObject(pito);
@@ -74,5 +75,20 @@ public class ProfileInformationAddDialog extends ProfileInformationDialog {
 	@Override
 	protected int getMessage() {
 		return 0;
+	}
+
+	@Override
+	protected boolean[] getMultiCheckedItems() {
+		return null;
+	}
+
+	@Override
+	protected CharSequence[] getMultiChoiceItems() {
+		return null;
+	}
+
+	@Override
+	protected OnMultiChoiceClickListener getOnMultiChoiceClickListener() {
+		return null;
 	}
 }

@@ -3,6 +3,7 @@ package pl.jrola.java.android.vigym.vigymobile.db.dao;
 import java.util.List;
 
 import pl.jrola.java.android.vigym.vigymobile.db.dao.exceptions.AddProfileInformationValueException;
+import pl.jrola.java.android.vigym.vigymobile.db.dao.exceptions.DeleteProfileInformationValueException;
 import pl.jrola.java.android.vigym.vigymobile.db.dao.exceptions.GetProfileInformationValueException;
 import pl.jrola.java.android.vigym.vigymobile.db.dao.exceptions.UnitGetException;
 import pl.jrola.java.android.vigym.vigymobile.db.dao.exceptions.UpdateProfileInformationValueException;

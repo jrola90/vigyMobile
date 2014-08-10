@@ -3,8 +3,8 @@ package pl.jrola.java.android.vigym.vigymobile.activities.profilemanagement.task
 import pl.jrola.java.android.vigym.vigymobile.R;
 import pl.jrola.java.android.vigym.vigymobile.activities.profilemanagement.ProfileInformationValueDialog;
 import pl.jrola.java.android.vigym.vigymobile.db.dao.DAOFactory;
-import pl.jrola.java.android.vigym.vigymobile.db.dao.DeleteProfileInformationValueException;
 import pl.jrola.java.android.vigym.vigymobile.db.dao.ProfileInformationValuesDAO;
+import pl.jrola.java.android.vigym.vigymobile.db.dao.exceptions.DeleteProfileInformationValueException;
 import pl.jrola.java.android.vigym.vigymobile.db.to.ProfileInformationValueTransferObject;
 import pl.jrola.java.android.vigym.vigymobile.tasks.VigymAsyncTask;
 import pl.jrola.java.android.vigym.vigymobile.ui.LoadingSpinner;

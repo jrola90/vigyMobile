@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
+import android.content.DialogInterface.OnMultiChoiceClickListener;
 import android.widget.Button;
 
 public class VigymConfirmDialog extends VigymDialog {
@@ -24,9 +25,10 @@ public class VigymConfirmDialog extends VigymDialog {
 
 	}
 
-	public void setOnClickListener(android.view.View.OnClickListener positiveOnClickListener) {
+	public void setOnClickListener(
+			android.view.View.OnClickListener positiveOnClickListener) {
 		this.positiveOnClickListener = positiveOnClickListener;
-		
+
 		dialog.setOnShowListener(new DialogInterface.OnShowListener() {
 
 			@Override
@@ -38,7 +40,7 @@ public class VigymConfirmDialog extends VigymDialog {
 			}
 		});
 	}
-	
+
 	@Override
 	protected int getLayout() {
 		return 0;
@@ -82,5 +84,30 @@ public class VigymConfirmDialog extends VigymDialog {
 	@Override
 	protected int getMessage() {
 		return R.string.q_are_you_sure;
+	}
+
+	@Override
+	protected boolean[] getMultiCheckedItems() {
+		return null;
+	}
+
+	@Override
+	protected CharSequence[] getMultiChoiceItems() {
+		return null;
+	}
+
+	@Override
+	protected OnMultiChoiceClickListener getOnMultiChoiceClickListener() {
+		return null;
+	}
+
+	@Override
+	protected OnClickListener getOnSingleChoiceClickListener() {
+		return null;
+	}
+
+	@Override
+	protected int getCheckedItem() {
+		return 0;
 	}
 }

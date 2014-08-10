@@ -8,6 +8,8 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.DialogInterface.OnClickListener;
+import android.content.DialogInterface.OnMultiChoiceClickListener;
 import android.view.LayoutInflater;
 import android.view.View;
 
@@ -19,7 +21,8 @@ public abstract class VigymDialog implements VigymUIComponent {
 	protected View dialogView;
 	protected LoadingSpinner loadingSpinner;
 	protected DbHelper databaseHelper;
-
+	private boolean lateInit = false;
+	
 	public VigymDialog(Activity parentActivity) {
 
 		this.parentActivity = parentActivity;
@@ -52,12 +55,24 @@ public abstract class VigymDialog implements VigymUIComponent {
 			this.dialogBuilder.setMessage(this.parentActivity
 					.getText(getMessage()));
 
+		if (getOnSingleChoiceClickListener() != null)
+			this.dialogBuilder.setSingleChoiceItems(getMultiChoiceItems(),
+					getCheckedItem(), getOnSingleChoiceClickListener());
+
+		if (getOnMultiChoiceClickListener() != null)
+			this.dialogBuilder.setMultiChoiceItems(getMultiChoiceItems(),
+					getMultiCheckedItems(), getOnMultiChoiceClickListener());
+
 		dialog = dialogBuilder.create();
-
+		
 		this.databaseHelper = new DbHelper(this.parentActivity);
-
 	}
 
+	public VigymDialog(Activity parentActivity, boolean lateInit) {
+		this(parentActivity);
+		this.lateInit = lateInit;
+	}
+	
 	public void releaseDatabaseHelper() {
 		this.databaseHelper.releaseDatabaseHelper();
 	}
@@ -80,14 +95,28 @@ public abstract class VigymDialog implements VigymUIComponent {
 
 	protected abstract int getMessage();
 
+	protected abstract OnClickListener getOnSingleChoiceClickListener();
+
+	protected abstract int getCheckedItem();
+
+	protected abstract boolean[] getMultiCheckedItems();
+
+	protected abstract CharSequence[] getMultiChoiceItems();
+
+	protected abstract OnMultiChoiceClickListener getOnMultiChoiceClickListener();
+
 	public void show() {
+
+		if (this.lateInit)
+			dialog = dialogBuilder.create();
+
 		dialog.show();
 	}
 
 	public void hide() {
 		dialog.hide();
 	}
-	
+
 	@Override
 	public LoadingSpinner getLoadingSpinner() {
 		return this.loadingSpinner;
@@ -98,22 +127,22 @@ public abstract class VigymDialog implements VigymUIComponent {
 		return this.databaseHelper;
 	}
 
-	@Override 
+	@Override
 	public String getStringRes(int resId) {
 		return parentActivity.getString(resId);
 	}
-	
+
 	public Context getContext() {
 		return parentActivity.getApplicationContext();
 	}
-	
+
 	@Override
 	public void refresh() {
-		
+
 	}
 
 	@Override
 	public void refresh(Collection<TransferObject> to) {
-		
+
 	}
 }

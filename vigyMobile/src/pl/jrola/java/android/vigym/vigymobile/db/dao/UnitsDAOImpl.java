@@ -47,8 +47,8 @@ public class UnitsDAOImpl implements UnitsDAO {
 		try {
 			Cursor cursor = databaseHelper.query(false, DbUtils.DB_TABLE_UNITS,
 					null, DbUtils.DB_COLUMN_UNIT_ID + "=?",
-					new String[] { unitId.toString() }, null, null, null, 1,
-					null);
+					new String[] { unitId.toString() }, null, null,
+					DbUtils.DB_COLUMN_UNIT_ID, 1, null);
 			while (cursor.moveToNext())
 				return new UnitTransferObject(cursor);
 			return null;
@@ -57,5 +57,5 @@ public class UnitsDAOImpl implements UnitsDAO {
 			throw new UnitGetException(e);
 		}
 	}
-	
+
 }

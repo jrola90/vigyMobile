@@ -65,4 +65,8 @@ public abstract class Validator implements Validable {
 	}
 	
 	public abstract boolean validate();
+
+	public void clearErrorMessage() {
+		errorMessageList.clear();
+	}
 }

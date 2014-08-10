@@ -10,7 +10,7 @@ import pl.jrola.java.android.vigym.vigymobile.db.dao.exceptions.ProfileInformati
 import pl.jrola.java.android.vigym.vigymobile.db.to.ProfileInformationTransferObject;
 import pl.jrola.java.android.vigym.vigymobile.db.to.TransferObject;
 
-public interface ProfileInformationDAO {
+public interface ProfileInformationsDAO {
 	
 	public void addProfileInformation(ProfileInformationTransferObject profileInformationTransferObject) throws ProfileInformationAddException;
 	public TransferObject getProfileInformation(Long id) throws ProfileInformationGetException;

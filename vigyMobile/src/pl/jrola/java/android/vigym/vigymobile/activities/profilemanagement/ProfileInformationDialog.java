@@ -13,6 +13,7 @@ import pl.jrola.java.android.vigym.vigymobile.validator.ValidatorList;
 import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
+import android.content.DialogInterface.OnMultiChoiceClickListener;
 import android.widget.TextView;
 
 public abstract class ProfileInformationDialog extends VigymDialog implements
@@ -116,4 +117,28 @@ public abstract class ProfileInformationDialog extends VigymDialog implements
 		
 	}
 
+	@Override
+	protected boolean[] getMultiCheckedItems() {
+		return null;
+	}
+
+	@Override
+	protected CharSequence[] getMultiChoiceItems() {
+		return null;
+	}
+
+	@Override
+	protected OnMultiChoiceClickListener getOnMultiChoiceClickListener() {
+		return null;
+	}
+	
+	@Override
+	protected OnClickListener getOnSingleChoiceClickListener() {
+		return null;
+	}
+
+	@Override
+	protected int getCheckedItem() {
+		return 0;
+	}
 }

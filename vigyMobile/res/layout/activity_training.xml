@@ -14,32 +14,14 @@
         android:background="#000"
         android:gravity="center" >
 
-        <ImageButton
-            android:id="@+id/imageButton1"
-            android:layout_width="60dp"
+        <Button
+            android:text="@string/add_training"
             android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:onClick="onAddTrainingItemClick"
-            android:src="@drawable/ic_add" />
+            android:onClick="onAddTrainingItemClick" />
 
-        <ImageButton
-            android:id="@+id/imageButton2"
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_toRightOf="@+id/imageButton1"
-            android:onClick="onUpdateTrainingItemClick"
-            android:src="@drawable/ic_edit" />
-
-        <ImageButton
-            android:id="@+id/imageButton3"
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:onClick="onDeleteTrainingItemClick"
-            android:layout_toRightOf="@+id/imageButton2"
-            android:src="@drawable/ic_delete" />
     </RelativeLayout>
 
     <!-- Scrollable Item below header and above footer -->
@@ -49,7 +31,6 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_above="@id/footer" >
-
     </ListView>
 
 </RelativeLayout>

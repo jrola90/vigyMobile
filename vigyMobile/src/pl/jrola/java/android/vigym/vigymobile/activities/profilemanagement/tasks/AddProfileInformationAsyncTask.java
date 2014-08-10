@@ -2,7 +2,7 @@ package pl.jrola.java.android.vigym.vigymobile.activities.profilemanagement.task
 
 import pl.jrola.java.android.vigym.vigymobile.R;
 import pl.jrola.java.android.vigym.vigymobile.db.dao.DAOFactory;
-import pl.jrola.java.android.vigym.vigymobile.db.dao.ProfileInformationDAO;
+import pl.jrola.java.android.vigym.vigymobile.db.dao.ProfileInformationsDAO;
 import pl.jrola.java.android.vigym.vigymobile.db.dao.exceptions.ProfileInformationAddException;
 import pl.jrola.java.android.vigym.vigymobile.db.to.ProfileInformationTransferObject;
 import pl.jrola.java.android.vigym.vigymobile.tasks.VigymAsyncTask;
@@ -24,8 +24,8 @@ public class AddProfileInformationAsyncTask extends
 	@Override
 	protected String doInBackground(Void... params) {
 		try {
-			ProfileInformationDAO profileInformationDAO = DAOFactory
-					.createProfileInformationDAO(((VigymActivity) activity)
+			ProfileInformationsDAO profileInformationDAO = DAOFactory
+					.createProfileInformationsDAO(((VigymActivity) activity)
 							.getDatabaseHelper());
 
 			profileInformationDAO

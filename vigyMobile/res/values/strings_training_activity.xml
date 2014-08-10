@@ -4,10 +4,34 @@
     <string name="title_activity_training">Trening</string>
 	<string name="add_training_item">Dodaj jednostkę treningową</string>
     
+	<string name="training_count">Ilość</string>
+	<string name="training_value">Wartość</string>
+	<string name="training_date">Data treningu</string>
+	
     <string-array name="exercises">
         <item>Wyciskanie sztangi leżąć na ławce prostej;</item>
         <item>Wyciskanie hantelek na skosie;Ćwiczący leży na ławce skośnej, skos od 15 &#8211; 30 stopni</item>
         <item>Martwy ciąg;Podstawowe ćwiczenie budujące plecy</item>
     </string-array>
-
+    
+    <string name="error_get_exercise_list">Podczas pobierania listy ćwiczeń wystapił błąd</string>
+	<string name="error_get_trainings_list">Podczas pobierania listy treningów wystąpił błąd</string>
+    <string name="error_add_training">Błąd dodawania treningu</string>
+	<string name="error_edit_training">Błąd podczas modyfikowania treningu</string>
+	<string name="error_delete_training">Błąd podczas usuwania treningu</string>
+    
+	<string name="success_add_training">Pomyślnie dodano trening</string>
+	<string name="success_edit_training">Pomyślnie zmieniono trening</string>
+	<string name="success_delete_training">Pomyślnie usunieto trening</string>
+	
+	<string name="add_training">Dodaj trening</string>
+	<string name="training_max_single">Maksymalnie: </string>
+	<string name="training_max_total">Maksymalnie w serii: </string>
+	<string name="training_avg_single">Średnia: </string>
+	<string name="training_avg_total">Średnio w serii: </string>
+	<string name="training_last">Ostatnio: </string>
+	
+	<string name="training_edit">Edytuj trening</string>
+	<string name="training_delete">Usuń treningi</string>
+    
 </resources>

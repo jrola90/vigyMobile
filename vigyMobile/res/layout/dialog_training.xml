@@ -9,16 +9,18 @@
         android:orientation="vertical" >
 
         <Spinner
-            android:id="@+id/spinner1"
+            android:id="@+id/exercisesSpinner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <TextView
-            android:id="@+id/textView1"
+            android:id="@+id/trainingDescTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Medium Text"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
+            android:padding="5dp"
+            android:textColor="#888888"
+            android:textStyle="italic"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -26,22 +28,22 @@
             android:orientation="horizontal" >
 
             <EditText
-                android:id="@+id/editText1"
+                android:id="@+id/trainingCountEditText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:hint="0"
+                android:hint="@string/training_count"
                 android:inputType="number" >
             </EditText>
 
             <EditText
-                android:id="@+id/editText2"
+                android:id="@+id/trainingValueEditText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:hint="0"
+                android:hint="@string/training_value"
                 android:inputType="numberDecimal" />
         </LinearLayout>
 
@@ -51,19 +53,21 @@
             android:orientation="horizontal" >
 
             <EditText
-                android:id="@+id/editText3"
+                android:id="@+id/trainingDateEditText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:hint="@string/training_date"
                 android:ems="10"
                 android:inputType="date" >
             </EditText>
 
             <Button
-                android:id="@+id/button1"
+                android:id="@+id/pickDateButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="showTimePickerDialog"
                 android:text="D" />
         </LinearLayout>
     </LinearLayout>

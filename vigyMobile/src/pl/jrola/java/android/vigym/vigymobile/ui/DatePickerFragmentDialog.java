@@ -8,16 +8,19 @@ import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.os.Bundle;
 import android.widget.DatePicker;
+import android.widget.TextView;
 
 public class DatePickerFragmentDialog extends VigymFragmentDialog implements DatePickerDialog.OnDateSetListener {
 
 	private VigymUIComponent parentActivity;
 	private VigymForm parentForm;
+	private TextView dateTextView;
 	
-	public DatePickerFragmentDialog(VigymUIComponent parentActivity, VigymForm parentForm) {
+	public DatePickerFragmentDialog(VigymUIComponent parentActivity, VigymForm parentForm, TextView dateTextView) {
 		super();
 		this.parentActivity = parentActivity;
 		this.parentForm = parentForm;
+		this.dateTextView = dateTextView;
 	}
 
 	@Override
@@ -43,8 +46,8 @@ public class DatePickerFragmentDialog extends VigymFragmentDialog implements Dat
 		date.append(Utils.DATE_SEP);
 		date.append(dayOfMonth);
 		
-		if (this.parentForm != null) {
-			((ProfileInformationValueDialog)parentForm).setDateTextView(date.toString());
+		if (this.dateTextView != null) {
+			dateTextView.setText(date.toString());
 		}
 		
 	}

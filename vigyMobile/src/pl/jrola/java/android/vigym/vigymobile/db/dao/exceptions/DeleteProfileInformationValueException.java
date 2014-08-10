@@ -1,4 +1,4 @@
-package pl.jrola.java.android.vigym.vigymobile.db.dao;
+package pl.jrola.java.android.vigym.vigymobile.db.dao.exceptions;
 
 public class DeleteProfileInformationValueException extends Exception {
 

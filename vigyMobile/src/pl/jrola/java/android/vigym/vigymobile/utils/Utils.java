@@ -34,6 +34,7 @@ public abstract class Utils {
 		alertMessageBox.setPositiveButton(R.string.ok, null);
 		alertMessageBox.setCancelable(true);
 		alertMessageBox.create().show();
+		
 	}
 
 	public static void showInfoMessage(String msg, Activity activity) {

@@ -44,7 +44,7 @@ public class UserTransferObject extends TransferObject {
 		this.user_password = cursor.getString(columnIndexUserPassword);
 	}
 
-	public Long getUser_id() {
+	public Long getId() {
 		return user_id;
 	}
 

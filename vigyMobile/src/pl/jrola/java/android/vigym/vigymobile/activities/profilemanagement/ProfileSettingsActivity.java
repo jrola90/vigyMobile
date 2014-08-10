@@ -62,7 +62,7 @@ public class ProfileSettingsActivity extends VigymFragment {
 		UsersDAO userDAO = DAOFactory.createUsersDAO(databaseHelper);
 		String passHash = Utils.generateSHA1Hash(newPassword);
 		if (userDAO.changePassword(LoggedUserSingleton.getUserTransferObject()
-				.getUser_id(), passHash)) {
+				.getId(), passHash)) {
 			LoggedUserSingleton.getUserTransferObject().setUser_password(
 					passHash);
 			Utils.showToast(getActivity().getApplicationContext(),

@@ -58,8 +58,10 @@ public class ValidatorList implements Validable {
 		while((tmpValidator) != null) {
 			if (tmpValidator.validate() == false) {
 				errorMessage = tmpValidator.getErrorMessages().trim();
-				if (errorMessage.equals("") == false)
+				tmpValidator.clearErrorMessage();
+				if (errorMessage.equals("") == false) {
 					Utils.showToast(context, errorMessage);
+				}
 				return false;
 			}
 			tmpValidator = tmpValidator.nextValidator;

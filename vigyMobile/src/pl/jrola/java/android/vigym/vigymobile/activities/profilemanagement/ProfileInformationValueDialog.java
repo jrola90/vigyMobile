@@ -31,6 +31,7 @@ import android.app.Activity;
 import android.app.DialogFragment;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
+import android.content.DialogInterface.OnMultiChoiceClickListener;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
@@ -190,11 +191,7 @@ public class ProfileInformationValueDialog extends VigymDialog implements
 	private void setDateTextView(Date date) {
 		SimpleDateFormat df = new SimpleDateFormat(Utils.DATE_FORMAT);
 		String formattedDate = df.format(date);
-		this.setDateTextView(formattedDate);
-	}
-
-	public void setDateTextView(String date) {
-		this.dateTextView.setText(date);
+		dateTextView.setText(formattedDate);
 	}
 
 	@Override
@@ -262,7 +259,7 @@ public class ProfileInformationValueDialog extends VigymDialog implements
 
 	public void showTimePickerDialog(View v) {
 		DialogFragment newFragment = new DatePickerFragmentDialog(
-				(VigymUIComponent) parentActivity, (VigymForm) this);
+				(VigymUIComponent) parentActivity, (VigymForm) this, dateTextView);
 		newFragment.show(parentActivity.getFragmentManager(), "datePicker");
 	}
 
@@ -366,4 +363,30 @@ public class ProfileInformationValueDialog extends VigymDialog implements
 			ProfileInformationValueTransferObject selectedProfileInformationValueTO) {
 		this.selectedProfileInformationValueTO = selectedProfileInformationValueTO;
 	}
+	
+	@Override
+	protected boolean[] getMultiCheckedItems() {
+		return null;
+	}
+
+	@Override
+	protected CharSequence[] getMultiChoiceItems() {
+		return null;
+	}
+
+	@Override
+	protected OnMultiChoiceClickListener getOnMultiChoiceClickListener() {
+		return null;
+	}
+
+	@Override
+	protected OnClickListener getOnSingleChoiceClickListener() {
+		return null;
+	}
+
+	@Override
+	protected int getCheckedItem() {
+		return 0;
+	}
+	
 }

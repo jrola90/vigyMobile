@@ -20,11 +20,11 @@ import pl.jrola.java.android.vigym.vigymobile.utils.db.WhereClauseHelper;
 import android.content.ContentValues;
 import android.database.Cursor;
 
-public class ProfileInformationDAOImpl implements ProfileInformationDAO {
+public class ProfileInformationsDAOImpl implements ProfileInformationsDAO {
 
 	private DbHelper db;
 
-	public ProfileInformationDAOImpl(DbHelper databaseHelper) {
+	public ProfileInformationsDAOImpl(DbHelper databaseHelper) {
 		this.db = databaseHelper;
 	}
 
@@ -39,7 +39,7 @@ public class ProfileInformationDAOImpl implements ProfileInformationDAO {
 		toValues.put(DbUtils.DB_COLUMN_PROF_INFO_DESC,
 				profileInformationTransferObject.getDesc());
 		toValues.put(DbUtils.DB_COLUMN_PROF_INFO_USER_ID, LoggedUserSingleton
-				.getUserTransferObject().getUser_id());
+				.getUserTransferObject().getId());
 
 		try {
 			db.insert(DbUtils.DB_TABLE_PROF_INFO, null, toValues);
