@@ -1,4 +1,4 @@
-package pl.jrola.java.android.vigym.vigymobile.activities.register.validator;
+package pl.jrola.java.android.vigym.vigymobile.activities.register.validators;
 
 import android.view.View;
 import pl.jrola.java.android.vigym.vigymobile.validator.Validator;

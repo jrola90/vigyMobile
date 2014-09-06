@@ -5,6 +5,11 @@ import android.content.Context;
 import android.os.Bundle;
 import android.app.Fragment;
 
+
+/**
+ * Main fragment. All fragments in this application should inherit from that
+ * abstract class.
+ */
 public abstract class VigymFragment extends Fragment implements VigymUIComponent {
 
 	protected DbHelper databaseHelper;

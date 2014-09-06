@@ -6,9 +6,8 @@ import android.content.Context;
 import android.os.Bundle;
 
 /**
- * Main activity. All activities in this app should inherit from that abstract
- * class.
- * 
+ * Main activity. All activities in this application should inherit from that
+ * abstract class.
  */
 public abstract class VigymActivity extends Activity implements
 		VigymUIComponent {

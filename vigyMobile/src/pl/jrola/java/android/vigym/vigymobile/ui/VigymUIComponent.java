@@ -10,9 +10,7 @@ public interface VigymUIComponent {
 	void refresh();
 	void refresh(Collection<TransferObject> to);
 	LoadingSpinner getLoadingSpinner();
-	
 	DbHelper getDatabaseHelper();
-	
 	String getStringRes(int resId);
 	Context getContext();
 }
